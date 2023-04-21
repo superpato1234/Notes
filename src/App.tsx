@@ -1,14 +1,14 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Counter from './components/counter/counter'
+import Notes from './components/notes/notes'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="App">
-      <h1>Notes</h1>
+    <div className="flex flex-col items-center bg-slate-900 h-[100vh] w-[100vw]">
+      <Counter />
+      <Notes />
+      
     </div>
   )
 }
